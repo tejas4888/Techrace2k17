@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/nav_menu">
+        <item
+            android:id="@+id/nav_scanner"
+            android:icon="@drawable/ic_center_focus_weak_white_24dp"
+            android:title="@string/scanner" />
+        <item
+            android:id="@+id/nav_clues"
+            android:icon="@drawable/ic_extension_white_24dp"
+            android:title="@string/clues" />
+        <item
+            android:id="@+id/nav_locations"
+            android:icon="@drawable/ic_beenhere_white_24dp"
+            android:title="@string/locations" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/nav_leaderboard"
+            android:icon="@drawable/leaderboard_icon"
+            android:title="@string/leaderboard"/>
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/nav_feed"
+            android:icon="@drawable/feed_icon"
+            android:title="@string/feed"/>
+
+    </group>
+
+
+
+    <group android:id="@+id/nav_menu_extra">
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_live_help_white_24dp"
+            android:title="@string/contact" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_white_24dp"
+            android:title="@string/about" />
+    </group>
+</menu>

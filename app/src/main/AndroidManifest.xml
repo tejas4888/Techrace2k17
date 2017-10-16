@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="thedorkknightrises.techraceapp">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.AboutActivity"
+            android:label="@string/about"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.LicenseActivity"
+            android:label="@string/licences"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.PeopleActivity"
+            android:label="@string/credits"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.HintActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Hint"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.IntroActivity"
+            android:theme="@style/Theme.Intro" />
+        <activity
+            android:name=".ui.DetailsActivity"
+            android:theme="@style/AppTheme.StatusbarOverlay" />
+        <activity
+            android:name=".ui.ContactActivity"
+            android:label="@string/action_help" />
+        <activity
+            android:name=".ui.SponsorsActivity"
+            android:label="Sponsors" />
+        <activity
+            android:name=".ui.ImageActivity"
+            android:label="Image"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <data android:scheme="image" />
+                <data android:host="techrace2k16.image" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.InAppChallengeActivity"
+            android:label="In-App Challenge"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".ui.EventsActivity"
+            android:label="@string/other_events" />
+        <activity
+            android:name=".ui.FeedActivity"
+            android:label="@string/feed" />
+        <activity
+            android:name=".ui.LeaderboardActivity"
+            android:label="@string/leaderboard" />
+
+        <receiver android:name=".LocationReceiver">
+            <intent-filter>
+                <action android:name="my.action" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".AlarmBroadcastReceiver" >
+        </receiver>
+
+        <activity android:name=".ui.ParticipantApplyActivity" />
+        <activity android:name=".ui.VolunteerApplyActivity"></activity>
+    </application>
+
+</manifest>
