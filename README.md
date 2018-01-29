@@ -1,6 +1,6 @@
-# TechRace 2k16
+# TechRace 2k17
 
-Official companion app for the S.P.I.T. TechRace event
+Official companion app for the S.P.I.T. TechRace event. Changes made to existing app with below mentioned License with permissions from the owners.
 
 ## License
 
